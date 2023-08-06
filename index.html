@@ -476,14 +476,10 @@
               />
             </label>
             <button type="submit" class="newsletter-subscription-button">
-              <div class="newsletter-subscription-box">
-                <div>Subscribe</div>
-                <div>
-                  <svg class="newsletter-subscription-icon">
-                    <use href="./images/icon.svg#icon-subscribe"></use>
-                  </svg>
-                </div>
-              </div>
+              Subscribe
+              <svg class="newsletter-subscription-icon">
+                <use href="./images/icon.svg#icon-subscribe"></use>
+              </svg>
             </button>
           </form>
         </div>
@@ -504,70 +500,61 @@
           </p>
           <div>
             <form class="modal-order-form">
-              <div class="modal-box">
-                <label class="modal-label"
-                  >Name
-                  <input
-                    class="modal-order-input"
-                    type="text"
-                    name="fullname"
-                    required
-                  />
-                  <svg class="modal-input-icon">
-                    <use href="./images/icon.svg#icon-person"></use>
-                  </svg>
-                </label>
-              </div>
-              <div class="modal-box">
-                <label class="modal-label"
-                  >Phone
-                  <input
-                    class="modal-order-input"
-                    type="tel"
-                    name="phone"
-                    required
-                  />
-                  <svg class="modal-input-icon">
-                    <use href="./images/icon.svg#icon-phone"></use>
-                  </svg>
-                </label>
-              </div>
-              <div class="modal-box">
-                <label class="modal-label"
-                  >Email
-                  <input
-                    class="modal-order-input"
-                    type="email"
-                    name="email"
-                    required
-                  />
-                  <svg class="modal-input-icon">
-                    <use href="./images/icon.svg#icon-email"></use>
-                  </svg>
-                </label>
-              </div>
-              <div>
-                <label class="modal-label"
-                  >Comment
-                  <textarea
-                    class="modal-order-comment"
-                    name="comment"
-                    placeholder="Text input"
-                  ></textarea>
-                </label>
-              </div>
-              <div class="modal-privacy">
+              <label class="modal-label"
+                ><span class="label-text">Name</span>
+                <input
+                  class="modal-order-input"
+                  type="text"
+                  name="fullname"
+                  required
+                />
+                <svg class="modal-input-icon">
+                  <use href="./images/icon.svg#icon-person"></use>
+                </svg>
+              </label>
+              <label class="modal-label"
+                ><span class="label-text">Phone</span>
+                <input
+                  class="modal-order-input"
+                  type="tel"
+                  name="phone"
+                  required
+                />
+                <svg class="modal-input-icon">
+                  <use href="./images/icon.svg#icon-phone"></use>
+                </svg>
+              </label>
+              <label class="modal-label"
+                ><span class="label-text">Email</span>
+                <input
+                  class="modal-order-input"
+                  type="email"
+                  name="email"
+                  required
+                />
+                <svg class="modal-input-icon">
+                  <use href="./images/icon.svg#icon-email"></use>
+                </svg>
+              </label>
+              <label class="modal-label">
+                <span class="label-text">Comment</span>
+                <textarea
+                  class="modal-order-comment"
+                  name="comment"
+                  placeholder="Text input"
+                ></textarea>
+              </label>
+              <label class="modal-privacy">
                 <input
                   type="checkbox"
                   name="privacy"
                   class="modal-privacy-check"
                 />
-
                 <p>
                   I accept the terms and conditions of the
                   <span class="modal-privacy-policy">Privacy Policy</span>
                 </p>
-              </div>
+              </label>
               <button class="modal-send-btn" type="submit">Send</button>
             </form>
           </div>
