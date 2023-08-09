@@ -94,6 +94,10 @@ ul {
   color: var(--slatecolor);
 }
 
+.burger-icon {
+  display: none;
+}
+
 .header-logo {
   color: var(--navyblue, #2e2f42);
   font-family: Raleway;
@@ -673,10 +677,17 @@ ul {
   border-radius: 4px;
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .modal-order-input:hover,
 .modal-order-input:focus {
+  border-color: var(--iriscolor);
+}
+
+.modal-order-input:focus + .modal-input-icon,
+.modal-order-input:hover + .modal-input-icon {
+  fill: var(--iriscolor);
   border-color: var(--iriscolor);
 }
 
@@ -687,11 +698,7 @@ ul {
   transform: translateY(-50%);
   left: 16px;
   width: 18px;
-}
-
-.modal-input-icon:hover,
-.modal-input-icon:focus {
-  fill: var(--iriscolor);
+  height: 18px;
 }
 
 .modal-order-comment {
@@ -746,13 +753,6 @@ ul {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.48px;
-}
-
-.modal-privacy-check {
-  accent-color: var(--oceancolor);
-  outline: none;
-  width: 16px;
-  height: 16px;
 }
 
 .modal-privacy-policy {
