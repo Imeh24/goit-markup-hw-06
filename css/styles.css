@@ -703,6 +703,7 @@ ul {
 .form-order-comment {
   resize: none;
   width: 360px;
+  padding: 8px 16px;
   height: 120px;
   border-radius: 4px;
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
@@ -716,8 +717,6 @@ ul {
 }
 
 .form-order-comment::placeholder {
-  padding-top: 8px;
-  padding-left: 16px;
   color: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
 }
 
