@@ -527,10 +527,21 @@
               ></textarea>
             </label>
             <label class="form-agreement">
-              <input type="checkbox" name="agreement" class="form-checkbox" />
+              <input
+                type="checkbox"
+                value="agree"
+                name="agreement"
+                class="form-checkbox"
+                required
+              />
+              <span class="form-checkbox-icon">
+                <svg class="form-checkmark-icon">
+                  <use href="./images/icon.svg#check-mark"></use>
+                </svg>
+              </span>
               <span class="form-privacy-policy">
                 I accept the terms and conditions of the
-                <a class="form-privacy-link" href="#">Privacy Policy</a></span
+                <a class="form-terms-link" href="#">Privacy Policy</a></span
               >
             </label>
             <button class="modal-send-btn" type="submit">Send</button>
